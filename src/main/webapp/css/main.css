@@ -1,0 +1,165 @@
+html {
+	font-family: sans-serif;
+	background: linear-gradient(-45deg, #ed193b, #a98055, #f286e2, #681d7a);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+body {
+
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: sans-serif;
+	background: linear-gradient(-45deg, #ed193b, #a98055, #f286e2, #681d7a);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.menu {
+	display: flex;
+	align-items: center;
+	margin: auto;
+	margin-top: 10px;
+	width: 60%;
+	height: auto;
+	max-height: 1000px;
+
+	border-radius: 20px;
+}
+
+.graph {
+	padding-top: 4px;
+	padding-left: 30px;
+	text-align: left;
+	width: 50%;
+	border-radius: 10px;
+	border: 2px dashed purple;
+}
+
+.data_input {
+	width: 50%;
+	text-align: center;
+	align-items: end;
+}
+
+.x_input {
+	margin-left:10px;
+	margin-bottom: 20px;
+	border:2px dashed green;
+	border-radius:10px;
+}
+
+.x_input > label {
+	width: fit-content;
+	margin: auto;
+}
+
+
+.y_input > input {
+	color: pink;
+	text-align: center;
+	font-size: 20px;
+	background-color: transparent;
+	border: 2px dashed green;
+	border-radius: 10px;
+	width: 80%;
+}
+
+.r_input {
+	margin-top: 20px;
+}
+
+.r_input > select {
+	width: 82%;
+	background-color:transparent;
+	border: 2px dashed green;
+	border-radius: 10px;
+	color:pink;
+	font-size: 20px;
+	text-align: center;
+}
+
+.r_input > select > option {
+	color: green;
+}
+
+.buttons {
+	margin-top: 20px;
+}
+
+button {
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background: #4b61cf;
+	color: #fff;
+}
+
+#alert {
+	display: flex;
+	justify-content: center;
+	height: 80px;
+	margin: auto;
+	margin-top: 10px;
+	background-color: transparent;
+	border: 2px dashed #f1db00;
+	border-radius: 20px;
+	width: 60%;
+	color: white;
+	font-size: 20px;
+	align-items: center;
+	text-align: center;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 10px;
+
+}
+
+span {
+	color: pink;
+	font-size: 20px;
+}
+
+table {
+	margin-top: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	border: 1px solid white;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px 10px;
+	border: 1px solid white;
+	border-color: #888888;
+	color: white;
+	background-color: #333333;
+	font-size: 22px;
+}
+
+::placeholder {
+	color: white;
+	text-align: center;
+}
+

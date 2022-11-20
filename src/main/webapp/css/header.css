@@ -1,0 +1,28 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+
+	height: 85px;
+}
+
+.header > a {
+	font-size:45px;
+	font-family: sans-serif;
+	color: transparent;
+
+	-webkit-background-clip: text;
+
+	animation: gradient 10s ease infinite;
+	background-image: linear-gradient(to right, red, fuchsia);;
+	text-decoration: none;
+	transition: 1s;
+}
+
+.header > a:hover {
+	font-size: 45px;
+	transition: 1s;
+	content: attr(data-title);
+}
